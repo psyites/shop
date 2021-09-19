@@ -2,32 +2,21 @@
   
   <head>
     <style>
-html,
+      html,
 body {
-  margin: 0;
-  padding: 0;
-}
-
-/* use viewport-relative units to cover page fully */
-body {
-  height: 100vh;
-  width: 100vw;
-}
-
-/* include border and padding in element width and height */
-* {
-  box-sizing: border-box;
-}
-
-/* full-sized  container that fills up the page */
-div {
   height: 100%;
-  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
 }
     </style>
     <body>
-      <div class="main-div">
-<object data="https://www.example.com"> <embed src=http://www.example.com"> </embed> Error: Embedded data could not be displayed. </object>
-  </div>
+      <div class="content"><object data="https://www.example.com"> <embed src=http://www.example.com"> </embed> Error: Embedded data could not be displayed. </object></div>
   </body>
   </html>
