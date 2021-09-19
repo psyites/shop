@@ -1,4 +1,8 @@
 <html>
-
-<object data=http://www.web-source.net width="600" height="400"> <embed src=http://www.web-source.net width="600" height="400"> </embed> Error: Embedded data could not be displayed. </object>
+  <div id="div"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+        $("#div")
+            .html('<object data="http://www.example.com"/>');
+</script>
 </html>
