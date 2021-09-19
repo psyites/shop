@@ -1,8 +1,13 @@
 <html>
+<script>
+  var height = window.innerHeight || document.body.clientHeight;
+  var width = window.innerWidth || document.body.clientWidth;
+
+  // debugging
+  alert(height);
+  alert(width);
   
-  <head>
-    </style>
-    <body>
-      <div class="content"><object data="https://www.example.com" height="950" width="1200"> <embed src=http://www.example.com" height="950" width="1200"> </embed> Error: Embedded data could not be displayed. </object></div>
-  </body>
-  </html>
+  document.write("<object data=\"https://www.example.com\" height=\"" + height + "\" width=\""+width+"\"> <embed src=\"http://www.example.com" height=\"" + height + "\" width=\"" + width + "\"> </embed> Error: Embedded data could not be displayed. </object>");
+  
+</script>
+</html>
